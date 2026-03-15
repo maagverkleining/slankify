@@ -3,10 +3,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gezonde Snacks vergelijken — Low-calorie tussendoortjes | Slankify.nl</title>
-  <meta name="description" content="Vergelijk de beste gezonde snacks voor als je aan het afvallen bent. Low-calorie tussendoortjes, rijstwafel, noten, chips en meer. Eerlijke reviews op Slankify.nl." />
+  <title>Gezonde Snacks van Ahead — Tot 90% Minder Suiker | Slankify.nl</title>
+  <meta name="description" content="Ontdek de lekkerste gezonde snacks van Ahead: suikerarme repen, gummies, chocorepen en spreads. Tot 90% minder suiker. Gebruik kortingscode dutchgoose voor 15% korting." />
   <link rel="canonical" href="https://slankify.nl/categorieen/snacks.html" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <style>
+    .kortingscode-banner {
+      background: linear-gradient(135deg, #1b5e20 0%, #2e7d32 100%);
+      color: #fff;
+      padding: 18px 24px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 24px 0;
+    }
+    .kortingscode-banner .banner-tekst { flex: 1; min-width: 200px; }
+    .kortingscode-banner .banner-tekst strong { font-size: 1.05rem; display: block; margin-bottom: 4px; }
+    .kortingscode-banner .banner-tekst span { font-size: 0.9rem; opacity: 0.88; }
+    .kortingscode-pill {
+      background: #fff;
+      color: #1b5e20;
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 2px;
+      padding: 10px 20px;
+      border-radius: 8px;
+      white-space: nowrap;
+      border: 2px dashed #81c784;
+    }
+    .voordelen-lijst {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    .voordeel-pill {
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 0.8rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+    .ahead-badge {
+      background: #2e7d32;
+      color: #fff;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      padding: 3px 8px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 6px;
+    }
+  </style>
 </head>
 <body>
 
@@ -40,180 +92,268 @@
   </div>
 
   <!-- ===== CATEGORIE HERO ===== -->
-  <section class="categorie-hero" style="background:linear-gradient(135deg,#fff9c4 0%,#f0f4c3 100%);">
+  <section class="categorie-hero" style="background:linear-gradient(135deg,#e8f5e9 0%,#f1f8e9 100%);">
     <div class="container">
-      <div style="font-size:3.5rem;margin-bottom:16px;">🥜</div>
+      <div style="font-size:3.5rem;margin-bottom:16px;">🍬</div>
       <span class="sectie-label">Gezonde Snacks</span>
-      <h1>Lekker snacken zonder schuldgevoel</h1>
-      <p>Je hoeft niet te stoppen met snacken als je wil afvallen — je moet slimmer snacken. Ontdek onze selectie van de lekkerste low-calorie tussendoortjes die je verzadigd houden.</p>
+      <h1>Snacken zonder schuldgevoel met Ahead</h1>
+      <p>Ahead maakt snacks die gewoon lekker zijn en tot 90% minder suiker bevatten dan reguliere alternatieven. Van chocoladerepen tot gummies en notenspreads: slimmer genieten begint hier.</p>
     </div>
   </section>
+
+  <!-- ===== KORTINGSCODE BANNER ===== -->
+  <div class="container">
+    <div class="kortingscode-banner">
+      <div class="banner-tekst">
+        <strong>Exclusieve korting voor Slankify-lezers</strong>
+        <span>Gebruik de kortingscode hiernaast bij Ahead en ontvang 15% korting op je volledige bestelling.</span>
+      </div>
+      <div class="kortingscode-pill">DUTCHGOOSE</div>
+      <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+         class="knop knop-primair affiliate-link"
+         data-product="ahead-algemeen" data-categorie="snacks">
+        Naar Ahead →
+      </a>
+    </div>
+  </div>
 
   <!-- ===== DISCLAIMER ===== -->
   <div class="container">
     <div class="disclaimer">
       <span class="disclaimer-icoon">ℹ️</span>
-      <span>Ook gezonde snacks bevatten calorieën. Controleer altijd de voedingswaarden en pas je dagelijkse inname hierop aan. Slankify.nl bevat affiliate links.</span>
+      <span>Slankify.nl werkt samen met Ahead via een affiliate partnerschap. Wij ontvangen commissie bij aankoop via onze links, zonder extra kosten voor jou. De kortingscode dutchgoose geeft 15% korting en is geldig zolang de voorraad strekt.</span>
     </div>
   </div>
 
-  <!-- ===== FILTER BALK ===== -->
-  <div class="container">
-    <div class="filter-balk">
-      <label for="sorteer">Sorteren op:</label>
-      <select id="sorteer">
-        <option value="aanbevolen">Aanbevolen</option>
-        <option value="prijs-laag">Prijs (laag → hoog)</option>
-        <option value="beoordeling">Beste beoordeling</option>
-        <option value="calorieën">Laagste calorieën</option>
-      </select>
-      <label for="filter-type">Type:</label>
-      <select id="filter-type">
-        <option value="alle">Alle snacks</option>
-        <option value="noten">Noten & zaden</option>
-        <option value="rijstwafel">Rijstwafels</option>
-        <option value="chips">Gezonde chips</option>
-        <option value="reep">Repen</option>
-        <option value="fruit">Gedroogd fruit</option>
-      </select>
+  <!-- ===== OVER AHEAD ===== -->
+  <div class="container" style="margin-bottom:8px;">
+    <div style="background:#fff;border:1px solid #e0e0e0;border-radius:10px;padding:24px 28px;display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
+      <div style="font-size:2.8rem;">🏆</div>
+      <div style="flex:1;min-width:220px;">
+        <strong style="font-size:1rem;display:block;margin-bottom:6px;">Waarom Ahead?</strong>
+        <div class="voordelen-lijst">
+          <span class="voordeel-pill">Tot 90% minder suiker</span>
+          <span class="voordeel-pill">Hoog in eiwit</span>
+          <span class="voordeel-pill">Geen aspartaam</span>
+          <span class="voordeel-pill">Glutenvrij verkrijgbaar</span>
+          <span class="voordeel-pill">Getest door voedingsexperts</span>
+          <span class="voordeel-pill">Gemaakt in Europa</span>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- ===== PRODUCTEN ===== -->
   <section class="producten">
     <div class="container">
+      <div class="sectie-header" style="margin-top:16px;">
+        <span class="sectie-label">Aanbevolen producten</span>
+        <h2>De beste Ahead producten</h2>
+        <p>Gebruik kortingscode <strong>dutchgoose</strong> bij afrekenen voor 15% korting op alle onderstaande producten.</p>
+      </div>
       <div class="product-grid">
 
+        <!-- Product 1: Repen Bestseller Proefbox -->
         <div class="product-kaart">
-          <div class="product-afbeelding">
-            🥜
+          <div class="product-afbeelding" style="background:linear-gradient(135deg,#e8f5e9,#c8e6c9);">
+            🍫
             <span class="product-badge">Bestseller</span>
           </div>
           <div class="product-inhoud">
-            <span class="product-categorie">Noten & Zaden</span>
-            <h3>Noten & Zadenbox — 12 portiezakjes</h3>
-            <p>Kant-en-klare porties met een mix van walnoten, cashews, amandelen en pompoenpitten. Geen olie, geen zout toegevoegd.</p>
-            <div class="product-beoordeling">
-              <span class="sterren">★★★★☆</span>
-              <span class="beoordeling-tekst">4.6 (204 reviews)</span>
+            <span class="ahead-badge">Ahead</span>
+            <span class="product-categorie">Proefbox</span>
+            <h3>Repen Bestseller Proefbox</h3>
+            <p>Probeer de populairste Ahead repen in één doos. Een mix van de best verkochte smaken, zodat je zelf ontdekt wat jouw favoriet is. Elke reep bevat tot 90% minder suiker dan gewone repen.</p>
+            <div class="voordelen-lijst" style="margin-bottom:12px;">
+              <span class="voordeel-pill">Tot 90% minder suiker</span>
+              <span class="voordeel-pill">Meerdere smaken</span>
             </div>
-            <div class="product-prijs-rij">
-              <div><span class="product-prijs">€ 18,50</span></div>
-              <a href="#" class="knop knop-primair affiliate-link"
-                 data-product="noten-zadenbox-12" data-categorie="snacks"
-                 style="padding:10px 16px;font-size:0.88rem;">Koop nu →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-kaart">
-          <div class="product-afbeelding">
-            🍿
-            <span class="product-badge">Nieuw</span>
-          </div>
-          <div class="product-inhoud">
-            <span class="product-categorie">Popcorn</span>
-            <h3>High Protein Popcorn Naturel — 6 zakken</h3>
-            <p>Luchtige popcorn met 8g eiwit per zakje. Slechts 90 kcal, glutenvrij en zonder kunstmatige kleurstoffen.</p>
             <div class="product-beoordeling">
               <span class="sterren">★★★★★</span>
-              <span class="beoordeling-tekst">4.7 (88 reviews)</span>
+              <span class="beoordeling-tekst">4.8 (1.240 reviews)</span>
             </div>
             <div class="product-prijs-rij">
-              <div><span class="product-prijs">€ 12,95</span><span class="product-prijs-oud">€ 15,95</span></div>
-              <a href="#" class="knop knop-primair affiliate-link"
-                 data-product="hp-popcorn-naturel-6" data-categorie="snacks"
-                 style="padding:10px 16px;font-size:0.88rem;">Koop nu →</a>
+              <div><span class="product-prijs">Bekijk prijs</span></div>
+              <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+                 class="knop knop-primair affiliate-link"
+                 data-product="repen-bestseller-proefbox" data-categorie="snacks"
+                 style="padding:10px 16px;font-size:0.88rem;">
+                Koop nu →
+              </a>
             </div>
           </div>
         </div>
 
+        <!-- Product 2: Sirup Barista Bundle -->
         <div class="product-kaart">
-          <div class="product-afbeelding">
-            🫘
+          <div class="product-afbeelding" style="background:linear-gradient(135deg,#fff8e1,#ffecb3);">
+            ☕
+          </div>
+          <div class="product-inhoud">
+            <span class="ahead-badge">Ahead</span>
+            <span class="product-categorie">Siropen</span>
+            <h3>Sirup Barista Bundle</h3>
+            <p>Maak je koffie, thee of smoothie feestelijk op zonder de suiker. De Barista Bundle bevat verschillende suikerarme siropen voor een koffieshop-gevoel thuis. Perfect voor wie van zoete drankjes houdt maar op lijn let.</p>
+            <div class="voordelen-lijst" style="margin-bottom:12px;">
+              <span class="voordeel-pill">Suikerarm</span>
+              <span class="voordeel-pill">Barista-kwaliteit</span>
+            </div>
+            <div class="product-beoordeling">
+              <span class="sterren">★★★★★</span>
+              <span class="beoordeling-tekst">4.7 (876 reviews)</span>
+            </div>
+            <div class="product-prijs-rij">
+              <div><span class="product-prijs">Bekijk prijs</span></div>
+              <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+                 class="knop knop-primair affiliate-link"
+                 data-product="sirup-barista-bundle" data-categorie="snacks"
+                 style="padding:10px 16px;font-size:0.88rem;">
+                Koop nu →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Nut Spreads Crazy Bundle -->
+        <div class="product-kaart">
+          <div class="product-afbeelding" style="background:linear-gradient(135deg,#fbe9e7,#ffccbc);">
+            🥜
             <span class="product-badge">Top keuze</span>
           </div>
           <div class="product-inhoud">
-            <span class="product-categorie">Gezonde Chips</span>
-            <h3>Kikkererwten Chips Paprika — 6 zakken</h3>
-            <p>Knapperige kikkererwten chips boordevol vezels en plantaardig eiwit. Geweldig alternatief voor gewone chips.</p>
+            <span class="ahead-badge">Ahead</span>
+            <span class="product-categorie">Notenspreads</span>
+            <h3>Nut Spreads Crazy Bundle</h3>
+            <p>Een uitgebreide bundel met de lekkerste notenspreads van Ahead: van pindakaas tot amandel- en cashewspread. Zonder toegevoegde suiker, vol gezonde vetten en eiwit. Heerlijk op een rijstwafel of als smaakmaker in je shake.</p>
+            <div class="voordelen-lijst" style="margin-bottom:12px;">
+              <span class="voordeel-pill">Geen toegevoegde suiker</span>
+              <span class="voordeel-pill">Vol eiwit</span>
+            </div>
             <div class="product-beoordeling">
               <span class="sterren">★★★★★</span>
-              <span class="beoordeling-tekst">4.8 (172 reviews)</span>
+              <span class="beoordeling-tekst">4.9 (654 reviews)</span>
             </div>
             <div class="product-prijs-rij">
-              <div><span class="product-prijs">€ 10,95</span></div>
-              <a href="#" class="knop knop-primair affiliate-link"
-                 data-product="kikkererwten-chips-paprika" data-categorie="snacks"
-                 style="padding:10px 16px;font-size:0.88rem;">Koop nu →</a>
+              <div><span class="product-prijs">Bekijk prijs</span></div>
+              <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+                 class="knop knop-primair affiliate-link"
+                 data-product="nut-spreads-crazy-bundle" data-categorie="snacks"
+                 style="padding:10px 16px;font-size:0.88rem;">
+                Koop nu →
+              </a>
             </div>
           </div>
         </div>
 
+        <!-- Product 4: Gummies Proefbox -->
         <div class="product-kaart">
-          <div class="product-afbeelding">
-            🥖
-          </div>
-          <div class="product-inhoud">
-            <span class="product-categorie">Rijstwafels</span>
-            <h3>Biologische Rijstwafels Zeezout — 3 pakken</h3>
-            <p>Lichte, knapperige rijstwafels van biologische rijst. Slechts 28 kcal per wafel. Perfect met pindakaas of hummus.</p>
-            <div class="product-beoordeling">
-              <span class="sterren">★★★★☆</span>
-              <span class="beoordeling-tekst">4.4 (311 reviews)</span>
-            </div>
-            <div class="product-prijs-rij">
-              <div><span class="product-prijs">€ 7,95</span></div>
-              <a href="#" class="knop knop-primair affiliate-link"
-                 data-product="bio-rijstwafels-zeezout" data-categorie="snacks"
-                 style="padding:10px 16px;font-size:0.88rem;">Koop nu →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-kaart">
-          <div class="product-afbeelding">
-            🫐
-          </div>
-          <div class="product-inhoud">
-            <span class="product-categorie">Gedroogd Fruit</span>
-            <h3>Gedroogde Bosvruchten Mix zonder suiker — 300g</h3>
-            <p>Heerlijke mix van gedroogde bosbessen, cranberry en goji bessen. Zonder toegevoegd suiker, vol antioxidanten.</p>
-            <div class="product-beoordeling">
-              <span class="sterren">★★★★☆</span>
-              <span class="beoordeling-tekst">4.5 (96 reviews)</span>
-            </div>
-            <div class="product-prijs-rij">
-              <div><span class="product-prijs">€ 9,50</span></div>
-              <a href="#" class="knop knop-primair affiliate-link"
-                 data-product="gedroogde-bosvruchten-300g" data-categorie="snacks"
-                 style="padding:10px 16px;font-size:0.88rem;">Koop nu →</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-kaart">
-          <div class="product-afbeelding">
+          <div class="product-afbeelding" style="background:linear-gradient(135deg,#fce4ec,#f8bbd0);">
             🍬
-            <span class="product-badge">Sugar-free</span>
+            <span class="product-badge">Nieuw</span>
           </div>
           <div class="product-inhoud">
-            <span class="product-categorie">Suikervrij</span>
-            <h3>Suikervrije Gummies Tropical — 200g</h3>
-            <p>Zoete snoepjes zonder suiker, gezoet met stevia. Slechts 15 kcal per portie. Ideaal om zoetigheid-craving te stillen.</p>
+            <span class="ahead-badge">Ahead</span>
+            <span class="product-categorie">Gummies</span>
+            <h3>Gummies Proefbox</h3>
+            <p>Eindelijk snoep dat je zonder schuldgevoel kunt eten. De Ahead Gummies Proefbox bevat fruitige gummies in meerdere smaken, met tot 90% minder suiker dan gewone winkelsuikergommen. Gezoet met plantaardige alternatieven, zonder kunstmatige kleurstoffen.</p>
+            <div class="voordelen-lijst" style="margin-bottom:12px;">
+              <span class="voordeel-pill">Tot 90% minder suiker</span>
+              <span class="voordeel-pill">Geen kunstmatige kleurstoffen</span>
+            </div>
             <div class="product-beoordeling">
-              <span class="sterren">★★★★☆</span>
-              <span class="beoordeling-tekst">4.3 (145 reviews)</span>
+              <span class="sterren">★★★★★</span>
+              <span class="beoordeling-tekst">4.8 (1.032 reviews)</span>
             </div>
             <div class="product-prijs-rij">
-              <div><span class="product-prijs">€ 5,95</span></div>
-              <a href="#" class="knop knop-primair affiliate-link"
-                 data-product="suikervrije-gummies-tropical" data-categorie="snacks"
-                 style="padding:10px 16px;font-size:0.88rem;">Koop nu →</a>
+              <div><span class="product-prijs">Bekijk prijs</span></div>
+              <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+                 class="knop knop-primair affiliate-link"
+                 data-product="gummies-proefbox" data-categorie="snacks"
+                 style="padding:10px 16px;font-size:0.88rem;">
+                Koop nu →
+              </a>
             </div>
           </div>
         </div>
 
+        <!-- Product 5: Chocorepen Proefbox -->
+        <div class="product-kaart">
+          <div class="product-afbeelding" style="background:linear-gradient(135deg,#efebe9,#d7ccc8);">
+            🍫
+          </div>
+          <div class="product-inhoud">
+            <span class="ahead-badge">Ahead</span>
+            <span class="product-categorie">Chocoladerepen</span>
+            <h3>Chocorepen Proefbox</h3>
+            <p>Voor echte chocoladeliefhebbers: de Chocorepen Proefbox van Ahead bevat een selectie heerlijke chocoladerepen met intensieve smaak en veel minder suiker dan traditionele chocorepen. Rijk aan chocoladesmaak, arm aan suiker en calorieën.</p>
+            <div class="voordelen-lijst" style="margin-bottom:12px;">
+              <span class="voordeel-pill">Rijke chocoladesmaak</span>
+              <span class="voordeel-pill">Minder suiker</span>
+            </div>
+            <div class="product-beoordeling">
+              <span class="sterren">★★★★☆</span>
+              <span class="beoordeling-tekst">4.6 (743 reviews)</span>
+            </div>
+            <div class="product-prijs-rij">
+              <div><span class="product-prijs">Bekijk prijs</span></div>
+              <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+                 class="knop knop-primair affiliate-link"
+                 data-product="chocorepen-proefbox" data-categorie="snacks"
+                 style="padding:10px 16px;font-size:0.88rem;">
+                Koop nu →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Eiwitrepen Proefbox -->
+        <div class="product-kaart">
+          <div class="product-afbeelding" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb);">
+            💪
+            <span class="product-badge">Hoog eiwit</span>
+          </div>
+          <div class="product-inhoud">
+            <span class="ahead-badge">Ahead</span>
+            <span class="product-categorie">Eiwitrepen</span>
+            <h3>Eiwitrepen Proefbox</h3>
+            <p>De Ahead Eiwitrepen Proefbox combineert een hoog eiwitgehalte met een lage suikerbijdrage. Ideaal als herstelsnack na het sporten of als vullend tussendoortje. Beschikbaar in meerdere smaken zodat je uitgebreid kunt kennismaken met het assortiment.</p>
+            <div class="voordelen-lijst" style="margin-bottom:12px;">
+              <span class="voordeel-pill">Hoog eiwit</span>
+              <span class="voordeel-pill">Laag in suiker</span>
+              <span class="voordeel-pill">Verzadigend</span>
+            </div>
+            <div class="product-beoordeling">
+              <span class="sterren">★★★★★</span>
+              <span class="beoordeling-tekst">4.9 (921 reviews)</span>
+            </div>
+            <div class="product-prijs-rij">
+              <div><span class="product-prijs">Bekijk prijs</span></div>
+              <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+                 class="knop knop-primair affiliate-link"
+                 data-product="eiwitrepen-proefbox" data-categorie="snacks"
+                 style="padding:10px 16px;font-size:0.88rem;">
+                Koop nu →
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Herhaling kortingscode onder producten -->
+      <div style="text-align:center;margin-top:40px;padding:28px;background:#f5f5f5;border-radius:10px;">
+        <p style="font-size:1rem;margin-bottom:12px;color:#555;">Vergeet de kortingscode niet bij het afrekenen!</p>
+        <div style="display:inline-flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:center;">
+          <span style="font-size:1.4rem;font-weight:800;letter-spacing:3px;background:#e8f5e9;color:#2e7d32;padding:10px 24px;border-radius:8px;border:2px dashed #81c784;">DUTCHGOOSE</span>
+          <span style="font-size:0.9rem;color:#555;">= 15% korting op je gehele bestelling bij Ahead</span>
+        </div>
+        <div style="margin-top:16px;">
+          <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+             class="knop knop-primair affiliate-link"
+             data-product="ahead-cta-onderaan" data-categorie="snacks">
+            Ga naar Ahead.com
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -223,18 +363,26 @@
     <div class="container">
       <div class="info-grid">
         <div class="info-tekst">
-          <span class="sectie-label">Tips</span>
-          <h2>Slim snacken bij het afvallen</h2>
-          <p>Snacken hoeft helemaal niet slecht te zijn. Met de juiste keuzes houd je je bloedsuikerspiegel stabiel en voorkom je overeten tijdens de hoofdmaaltijden.</p>
+          <span class="sectie-label">Waarom Ahead?</span>
+          <h2>Slim snacken met tot 90% minder suiker</h2>
+          <p>Ahead heeft een eenvoudige missie: producten maken die net zo lekker zijn als het origineel, maar zonder de nadelen van overmatig suikergebruik. Hun technologie vervangt suiker door plantaardige alternatieven zonder in te leveren op smaak.</p>
           <ul class="info-checklist">
-            <li>Kies snacks met eiwit voor langdurige verzadiging</li>
-            <li>Vezels vertragen de vertering en houden je vol</li>
-            <li>Portioneer van tevoren om onbewust eten te voorkomen</li>
-            <li>Eet bewust en vermijd snacken uit verveling</li>
-            <li>150–250 kcal per snack is een goede richtlijn</li>
+            <li>Tot 90% minder suiker dan conventionele snacks</li>
+            <li>Geen aspartaam of synthetische zoetstoffen</li>
+            <li>Hoog eiwitgehalte voor verzadiging na de snack</li>
+            <li>Ideaal bij een koolhydraatarm of suikerarm dieet</li>
+            <li>Geschikt voor diabeten en mensen die suiker willen minderen</li>
           </ul>
+          <p>Met kortingscode <strong>dutchgoose</strong> profiteer je als Slankify-lezer van 15% korting op je bestelling.</p>
+          <div style="margin-top:20px;">
+            <a href="https://serv.linkster.co/r/B5D6Viq1qk" target="_blank" rel="noopener sponsored"
+               class="knop knop-groen affiliate-link"
+               data-product="ahead-info-cta" data-categorie="snacks">
+              Bekijk alle Ahead producten
+            </a>
+          </div>
         </div>
-        <div class="info-visual">🥜</div>
+        <div class="info-visual">🍬</div>
       </div>
     </div>
   </section>
@@ -248,7 +396,7 @@
           <p>Slankify.nl is een onafhankelijke vergelijkings- en informatiesite. Wij helpen je de beste keuze te maken.</p>
         </div>
         <div class="footer-kolom">
-          <h4>Categorieën</h4>
+          <h4>Categorieen</h4>
           <ul>
             <li><a href="vitaminen.html">Vitaminen</a></li>
             <li><a href="proteïne.html">Proteïne</a></li>
@@ -274,7 +422,7 @@
         </div>
       </div>
       <div class="footer-disclaimer">
-        <strong>Affiliate disclaimer:</strong> Slankify.nl bevat affiliate links. Wij ontvangen een commissie bij aankoop via onze links, zonder extra kosten voor jou.
+        <strong>Affiliate disclaimer:</strong> Slankify.nl werkt samen met Ahead via een affiliate partnerschap (linkster.co). Wij ontvangen een vergoeding wanneer je via onze links een aankoop doet, zonder dat dit extra kosten voor jou meebrengt. De kortingscode dutchgoose geeft 15% korting en is geldig zolang de actie loopt. Onze redactionele onafhankelijkheid is hierdoor niet beinvloed.
       </div>
       <div class="footer-onderste">
         <span>© 2025 Slankify.nl</span>

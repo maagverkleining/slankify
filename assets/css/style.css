@@ -1,0 +1,848 @@
+/* =========================================
+   Slankify.nl - Hoofdstijlblad
+   ========================================= */
+
+:root {
+  --groen: #2e7d32;
+  --groen-licht: #43a047;
+  --groen-extra-licht: #e8f5e9;
+  --oranje: #f57c00;
+  --oranje-licht: #ff9800;
+  --wit: #ffffff;
+  --lichtgrijs: #f5f5f5;
+  --tekstgrijs: #555555;
+  --donker: #212121;
+  --rand: #e0e0e0;
+  --schaduw: 0 2px 8px rgba(0,0,0,0.08);
+  --schaduw-hover: 0 6px 20px rgba(0,0,0,0.14);
+  --radius: 10px;
+  --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font);
+  color: var(--donker);
+  background: var(--wit);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--groen);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--groen-licht);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================================
+   HEADER & NAVIGATIE
+   ========================================= */
+
+header {
+  background: var(--groen);
+  color: var(--wit);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: var(--wit);
+  letter-spacing: -0.5px;
+}
+
+.logo span {
+  color: var(--oranje-licht);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 8px;
+}
+
+nav ul li a {
+  color: var(--wit);
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.actief {
+  background: rgba(255,255,255,0.2);
+  color: var(--wit);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--wit);
+  border-radius: 3px;
+}
+
+/* =========================================
+   HERO SECTIE
+   ========================================= */
+
+.hero {
+  background: linear-gradient(135deg, var(--groen) 0%, var(--groen-licht) 100%);
+  color: var(--wit);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.hero h1 span {
+  color: var(--oranje-licht);
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  opacity: 0.9;
+}
+
+.hero-knoppen {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* =========================================
+   KNOPPEN
+   ========================================= */
+
+.knop {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.knop-primair {
+  background: var(--oranje);
+  color: var(--wit);
+}
+
+.knop-primair:hover {
+  background: var(--oranje-licht);
+  color: var(--wit);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(245,124,0,0.4);
+}
+
+.knop-secondair {
+  background: transparent;
+  color: var(--wit);
+  border: 2px solid rgba(255,255,255,0.7);
+}
+
+.knop-secondair:hover {
+  background: rgba(255,255,255,0.15);
+  color: var(--wit);
+}
+
+.knop-groen {
+  background: var(--groen);
+  color: var(--wit);
+}
+
+.knop-groen:hover {
+  background: var(--groen-licht);
+  color: var(--wit);
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   SECTIE HEADERS
+   ========================================= */
+
+.sectie-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sectie-header h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--donker);
+  margin-bottom: 10px;
+}
+
+.sectie-header p {
+  color: var(--tekstgrijs);
+  font-size: 1.05rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sectie-label {
+  display: inline-block;
+  background: var(--groen-extra-licht);
+  color: var(--groen);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+/* =========================================
+   CATEGORIE KAARTEN (homepage)
+   ========================================= */
+
+.categorieen {
+  padding: 70px 0;
+  background: var(--lichtgrijs);
+}
+
+.categorie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.categorie-kaart {
+  background: var(--wit);
+  border-radius: var(--radius);
+  padding: 28px 20px;
+  text-align: center;
+  box-shadow: var(--schaduw);
+  transition: all 0.25s;
+  border: 2px solid transparent;
+}
+
+.categorie-kaart:hover {
+  box-shadow: var(--schaduw-hover);
+  border-color: var(--groen-licht);
+  transform: translateY(-4px);
+}
+
+.categorie-icoon {
+  font-size: 2.8rem;
+  margin-bottom: 12px;
+}
+
+.categorie-kaart h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: var(--donker);
+}
+
+.categorie-kaart p {
+  font-size: 0.88rem;
+  color: var(--tekstgrijs);
+  margin-bottom: 16px;
+}
+
+.categorie-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--groen);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* =========================================
+   PRODUCT KAARTEN
+   ========================================= */
+
+.producten {
+  padding: 70px 0;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.product-kaart {
+  background: var(--wit);
+  border-radius: var(--radius);
+  box-shadow: var(--schaduw);
+  overflow: hidden;
+  transition: all 0.25s;
+  border: 1px solid var(--rand);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-kaart:hover {
+  box-shadow: var(--schaduw-hover);
+  transform: translateY(-4px);
+}
+
+.product-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--oranje);
+  color: var(--wit);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.product-afbeelding {
+  position: relative;
+  background: var(--groen-extra-licht);
+  padding: 30px;
+  text-align: center;
+  font-size: 4rem;
+  min-height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-inhoud {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-categorie {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--groen);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.product-inhoud h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: var(--donker);
+  line-height: 1.3;
+}
+
+.product-inhoud p {
+  font-size: 0.88rem;
+  color: var(--tekstgrijs);
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.product-beoordeling {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 14px;
+  font-size: 0.88rem;
+}
+
+.sterren {
+  color: #fdd835;
+}
+
+.beoordeling-tekst {
+  color: var(--tekstgrijs);
+}
+
+.product-prijs-rij {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.product-prijs {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--groen);
+}
+
+.product-prijs-oud {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 6px;
+}
+
+/* =========================================
+   VOORDELEN / USP SECTIE
+   ========================================= */
+
+.voordelen {
+  padding: 70px 0;
+  background: var(--groen-extra-licht);
+}
+
+.voordelen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.voordeel-item {
+  text-align: center;
+}
+
+.voordeel-icoon {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.voordeel-item h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.voordeel-item p {
+  font-size: 0.88rem;
+  color: var(--tekstgrijs);
+}
+
+/* =========================================
+   REVIEWS / TESTIMONIALS
+   ========================================= */
+
+.reviews {
+  padding: 70px 0;
+  background: var(--lichtgrijs);
+}
+
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.review-kaart {
+  background: var(--wit);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: var(--schaduw);
+  border-left: 4px solid var(--groen);
+}
+
+.review-tekst {
+  font-style: italic;
+  color: var(--tekstgrijs);
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.review-auteur {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.review-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--groen-extra-licht);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.review-naam {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.review-locatie {
+  font-size: 0.8rem;
+  color: var(--tekstgrijs);
+}
+
+/* =========================================
+   CATEGORIE HERO (sub-pagina's)
+   ========================================= */
+
+.categorie-hero {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.categorie-hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--donker);
+}
+
+.categorie-hero p {
+  font-size: 1.1rem;
+  color: var(--tekstgrijs);
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   FILTER / SORT BAR
+   ========================================= */
+
+.filter-balk {
+  background: var(--lichtgrijs);
+  border: 1px solid var(--rand);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+.filter-balk label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--tekstgrijs);
+}
+
+.filter-balk select,
+.filter-balk input {
+  padding: 8px 12px;
+  border: 1px solid var(--rand);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--wit);
+  color: var(--donker);
+}
+
+/* =========================================
+   DISCLAIMER BOX
+   ========================================= */
+
+.disclaimer {
+  background: #fff8e1;
+  border: 1px solid #ffe082;
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  font-size: 0.85rem;
+  color: #6d4c00;
+  margin: 32px 0;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.disclaimer-icoon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+/* =========================================
+   INFO / GIDS SECTIE
+   ========================================= */
+
+.info-sectie {
+  padding: 70px 0;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.info-tekst h2 {
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.info-tekst p {
+  color: var(--tekstgrijs);
+  margin-bottom: 16px;
+}
+
+.info-checklist {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.info-checklist li {
+  padding: 6px 0;
+  padding-left: 26px;
+  position: relative;
+  font-size: 0.95rem;
+  color: var(--tekstgrijs);
+}
+
+.info-checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--groen);
+  font-weight: 700;
+}
+
+.info-visual {
+  background: var(--groen-extra-licht);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  font-size: 6rem;
+}
+
+/* =========================================
+   NIEUWSBRIEF
+   ========================================= */
+
+.nieuwsbrief {
+  background: linear-gradient(135deg, var(--groen) 0%, var(--groen-licht) 100%);
+  color: var(--wit);
+  padding: 70px 0;
+  text-align: center;
+}
+
+.nieuwsbrief h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.nieuwsbrief p {
+  opacity: 0.9;
+  margin-bottom: 28px;
+  font-size: 1.05rem;
+}
+
+.nieuwsbrief-form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.nieuwsbrief-form input {
+  flex: 1;
+  min-width: 220px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+}
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+  background: var(--donker);
+  color: #aaa;
+  padding: 60px 0 30px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-merk .logo {
+  font-size: 1.5rem;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.footer-merk p {
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.footer-kolom h4 {
+  color: var(--wit);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.footer-kolom ul {
+  list-style: none;
+}
+
+.footer-kolom ul li {
+  margin-bottom: 8px;
+}
+
+.footer-kolom ul li a {
+  color: #aaa;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.footer-kolom ul li a:hover {
+  color: var(--wit);
+}
+
+.footer-disclaimer {
+  border-top: 1px solid #333;
+  padding-top: 28px;
+  font-size: 0.8rem;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.footer-onderste {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #aaa;
+  font-size: 0.82rem;
+}
+
+.footer-links a:hover {
+  color: var(--wit);
+}
+
+/* =========================================
+   BREADCRUMB
+   ========================================= */
+
+.breadcrumb {
+  padding: 14px 0;
+  font-size: 0.85rem;
+  color: var(--tekstgrijs);
+}
+
+.breadcrumb a {
+  color: var(--groen);
+}
+
+.breadcrumb span {
+  margin: 0 6px;
+  color: #bbb;
+}
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 900px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .info-visual {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: var(--groen);
+    padding: 16px;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-balk {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

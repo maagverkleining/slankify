@@ -407,7 +407,9 @@ nav ul li a.actief {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: auto;
+  gap: 12px;
+  margin-top: 16px;
+  flex-wrap: wrap;
 }
 
 .product-prijs {
@@ -522,7 +524,7 @@ nav ul li a.actief {
    ========================================= */
 
 .categorie-hero {
-  padding: 60px 20px;
+  padding: 28px 20px;
   text-align: center;
 }
 

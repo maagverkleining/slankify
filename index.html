@@ -8,6 +8,7 @@
   <meta name="keywords" content="afvallen, vitaminen, proteïne, suikervrije snacks, maagverkleining, supplementen vergelijken, gezond afvallen Nederland" />
   <link rel="canonical" href="https://slankify.nl/" />
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
   <meta property="og:title" content="Afvallen & Gezonde Keuzes | Slankify.nl — Onafhankelijk Vergelijken" />
   <meta property="og:description" content="Slankify.nl vergelijkt de beste producten voor afvallen: vitaminen, proteïne, suikervrije snacks en supplementen na maagverkleining. Onafhankelijk advies, Nederlandse prijzen." />
   <meta property="og:url" content="https://slankify.nl/" />
@@ -32,51 +33,43 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header>
-    <div class="header-inner">
-      <a href="index.html" class="logo">Slank<span>ify</span>.nl</a>
-      <div class="hamburger" role="button" aria-label="Menu openen">
-        <span></span><span></span><span></span>
+  <header class="header-top">
+    <div class="header-top-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="Slankify" class="logo-img">
+      </a>
+      <div class="header-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Waar ben je naar op zoek?">
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html" class="actief">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Supplementen ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="categorieen/vitaminen.html">Vitaminen</a></li>
-              <li><a href="categorieen/proteïne.html">Proteïne</a></li>
-              <li><a href="categorieen/maagverkleining.html">Maagverkleining</a></li>
-              <li><a href="categorieen/glp1.html">GLP-1 / Ozempic</a></li>
-              <li><a href="categorieen/supplementen.html">Eiwitshakes &amp; Collageen</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Eten &amp; Koken ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="categorieen/snacks.html">Snacks</a></li>
-              <li><a href="categorieen/keuken.html">Keuken</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Herstel ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="categorieen/lichaam.html">Lichaam &amp; Huid</a></li>
-              <li><a href="categorieen/fitness.html">Fitness</a></li>
-              <li><a href="categorieen/monitoring.html">Monitoring</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Lifestyle ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="categorieen/comfort.html">Comfort</a></li>
-              <li><a href="categorieen/lifestyle.html">Lifestyle</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-icons">
+        <a href="#" class="header-icon-btn" title="Mijn account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Account</span>
+        </a>
+        <a href="#" class="header-icon-btn" title="Winkelwagen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61H19a2 2 0 001.99-1.61L23 6H6"/></svg>
+          <span>Winkelwagen</span>
+        </a>
+      </div>
     </div>
   </header>
+  <nav class="header-nav">
+    <div class="header-nav-inner">
+      <a href="categorieen/maagverkleining.html" class="nav-item nav-item-featured">🔪 Maagverkleining</a>
+      <a href="categorieen/glp1.html" class="nav-item nav-item-featured">💉 GLP-1 / Ozempic</a>
+      <div class="nav-divider"></div>
+      <a href="categorieen/vitaminen.html" class="nav-item">Vitaminen</a>
+      <a href="categorieen/proteïne.html" class="nav-item">Proteïne</a>
+      <a href="categorieen/snacks.html" class="nav-item">Snacks</a>
+      <a href="categorieen/supplementen.html" class="nav-item">Supplementen</a>
+      <a href="categorieen/keuken.html" class="nav-item">Keuken</a>
+      <a href="categorieen/lichaam.html" class="nav-item">Lichaam</a>
+      <a href="categorieen/fitness.html" class="nav-item">Fitness</a>
+      <a href="categorieen/monitoring.html" class="nav-item">Monitoring</a>
+      <a href="categorieen/lifestyle.html" class="nav-item">Lifestyle</a>
+    </div>
+  </nav>
 
   <!-- ===== HERO ===== -->
   <section class="hero">
@@ -90,13 +83,15 @@
     </div>
   </section>
 
-  <!-- ===== VERTROUWEN BALK ===== -->
-  <div style="background:#fff;border-bottom:1px solid #e0e0e0;padding:16px 0;text-align:center;">
-    <div class="container" style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;font-size:0.88rem;color:#555;font-weight:600;">
-      <span>✅ 500+ producten vergeleken</span>
-      <span>⭐ 4.8/5 gemiddelde beoordeling</span>
-      <span>🇳🇱 100% Nederlandstalig</span>
-      <span>🔒 Onafhankelijk advies</span>
+  <!-- ===== TRUST BAR ===== -->
+  <div class="trust-bar">
+    <div class="container">
+      <div class="trust-items">
+        <span>✓ <strong>Onafhankelijk</strong> advies</span>
+        <span>✓ <strong>Eerlijke</strong> productreviews</span>
+        <span>✓ <strong>Dagelijks</strong> bijgewerkt</span>
+        <span>✓ Gebaseerd op <strong>eigen ervaring</strong></span>
+      </div>
     </div>
   </div>
 

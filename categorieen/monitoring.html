@@ -7,6 +7,7 @@
   <meta name="description" content="Smart weegschalen en bloeddrukmeters voor dagelijkse gezondheidsmonitoring na maagverkleining. Vergelijk producten bij bol.com." />
   <link rel="canonical" href="https://slankify.nl/categorieen/monitoring.html" />
   <link rel="stylesheet" href="../assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
   <style>
     .voordelen-lijst { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:12px; }
     .voordeel-pill { background:#e8f5e9; color:#2e7d32; font-size:0.78rem; font-weight:700; padding:3px 10px; border-radius:20px; }
@@ -35,51 +36,43 @@
 <body>
 
   <!-- ===== HEADER ===== -->
-  <header>
-    <div class="header-inner">
-      <a href="../index.html" class="logo">Slank<span>ify</span>.nl</a>
-      <div class="hamburger" role="button" aria-label="Menu openen">
-        <span></span><span></span><span></span>
+  <header class="header-top">
+    <div class="header-top-inner">
+      <a href="../index.html" class="logo">
+        <img src="../assets/logo.png" alt="Slankify" class="logo-img">
+      </a>
+      <div class="header-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <input type="text" placeholder="Waar ben je naar op zoek?">
       </div>
-      <nav>
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Supplementen ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="vitaminen.html">Vitaminen</a></li>
-              <li><a href="proteïne.html">Proteïne</a></li>
-              <li><a href="maagverkleining.html">Maagverkleining</a></li>
-              <li><a href="glp1.html">GLP-1 / Ozempic</a></li>
-              <li><a href="supplementen.html">Eiwitshakes &amp; Collageen</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Eten &amp; Koken ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="snacks.html">Snacks</a></li>
-              <li><a href="keuken.html">Keuken</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Herstel ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="lichaam.html">Lichaam &amp; Huid</a></li>
-              <li><a href="fitness.html">Fitness</a></li>
-              <li><a href="monitoring.html">Monitoring</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle">Lifestyle ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="comfort.html">Comfort</a></li>
-              <li><a href="lifestyle.html">Lifestyle</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
+      <div class="header-icons">
+        <a href="#" class="header-icon-btn" title="Mijn account">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span>Account</span>
+        </a>
+        <a href="#" class="header-icon-btn" title="Winkelwagen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 001.99 1.61H19a2 2 0 001.99-1.61L23 6H6"/></svg>
+          <span>Winkelwagen</span>
+        </a>
+      </div>
     </div>
   </header>
+  <nav class="header-nav">
+    <div class="header-nav-inner">
+      <a href="maagverkleining.html" class="nav-item nav-item-featured">🔪 Maagverkleining</a>
+      <a href="glp1.html" class="nav-item nav-item-featured">💉 GLP-1 / Ozempic</a>
+      <div class="nav-divider"></div>
+      <a href="vitaminen.html" class="nav-item">Vitaminen</a>
+      <a href="proteïne.html" class="nav-item">Proteïne</a>
+      <a href="snacks.html" class="nav-item">Snacks</a>
+      <a href="supplementen.html" class="nav-item">Supplementen</a>
+      <a href="keuken.html" class="nav-item">Keuken</a>
+      <a href="lichaam.html" class="nav-item">Lichaam</a>
+      <a href="fitness.html" class="nav-item">Fitness</a>
+      <a href="monitoring.html" class="nav-item actief">Monitoring</a>
+      <a href="lifestyle.html" class="nav-item">Lifestyle</a>
+    </div>
+  </nav>
 
   <!-- ===== BREADCRUMB ===== -->
   <div class="container">

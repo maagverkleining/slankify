@@ -84,7 +84,7 @@ img {
   align-items: center;
   gap: 16px;
 }
-.header-row1 .header-inner { height: 156px; }
+.header-row1 .header-inner { height: 72px; }
 .header-row2 .header-inner {
   height: 44px;
   overflow-x: auto;
@@ -93,8 +93,16 @@ img {
 }
 .header-row2 .header-inner::-webkit-scrollbar { display: none; }
 
-.logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-.logo img { height: 140px; width: auto; }
+.logo { display: flex; align-items: center; gap: 10px; text-decoration: none; flex-shrink: 0; }
+.logo img { height: 56px; width: auto; }
+.logo-text {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.65rem;
+  font-weight: 900;
+  color: #2c3e2d;
+  letter-spacing: -0.5px;
+  white-space: nowrap;
+}
 
 .header-search {
   flex: 1;

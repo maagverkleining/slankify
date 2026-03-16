@@ -107,6 +107,49 @@ nav ul li a.actief {
   color: var(--wit);
 }
 
+/* =========================================
+   DROPDOWN NAVIGATIE
+   ========================================= */
+
+nav ul li.dropdown {
+  position: relative;
+}
+
+nav ul li.dropdown .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  min-width: 200px;
+  z-index: 2000;
+  padding: 6px 0;
+  flex-direction: column;
+  gap: 0;
+}
+
+nav ul li.dropdown:hover .dropdown-menu,
+nav ul li.dropdown.open .dropdown-menu {
+  display: flex;
+}
+
+nav ul li.dropdown .dropdown-menu li a {
+  color: var(--donker);
+  padding: 9px 16px;
+  border-radius: 0;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background 0.15s;
+}
+
+nav ul li.dropdown .dropdown-menu li a:hover {
+  background: var(--groen-extra-licht);
+  color: var(--groen);
+}
+
 .hamburger {
   display: none;
   flex-direction: column;

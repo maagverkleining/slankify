@@ -893,3 +893,20 @@ footer {
     align-items: flex-start;
   }
 }
+
+/* Hele productkaart klikbaar */
+.product-kaart {
+  position: relative;
+  cursor: pointer;
+}
+.product-kaart .kaart-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+}
+.product-kaart .knop,
+.product-kaart a[style*="background"] {
+  position: relative;
+  z-index: 2;
+}

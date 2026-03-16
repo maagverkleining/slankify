@@ -84,7 +84,7 @@ img {
   align-items: center;
   gap: 16px;
 }
-.header-row1 .header-inner { height: 68px; }
+.header-row1 .header-inner { height: 156px; }
 .header-row2 .header-inner {
   height: 44px;
   overflow-x: auto;
@@ -94,7 +94,7 @@ img {
 .header-row2 .header-inner::-webkit-scrollbar { display: none; }
 
 .logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 0; }
-.logo img { height: 44px; width: auto; }
+.logo img { height: 140px; width: auto; }
 
 .header-search {
   flex: 1;
